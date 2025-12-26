@@ -33,6 +33,83 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <!-- Main Custom Css -->
     <link href="css/custom.css" rel="stylesheet" media="screen" />
+
+    <style>
+      .top-info-bar {
+        width: 100%;
+        background: #0c1524; /* navy blue */
+        color: #fff;
+        font-size: 14px;
+      }
+
+      .top-info-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 8px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-info-left span {
+        margin-right: 20px;
+      }
+
+      .top-info-left i {
+        margin-right: 6px;
+      }
+
+      .top-info-left a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .top-info-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .top-link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .top-btn {
+        background: #ff7a32;
+        color: #fff;
+        padding: 8px 14px;
+        border-radius: 3px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s ease;
+      }
+
+      .top-btn:hover {
+        background: #e66925;
+      }
+
+      @media (max-width: 768px) {
+        .top-info-container {
+          flex-direction: column;
+          gap: 8px;
+          text-align: center;
+        }
+
+        .top-info-left span {
+          display: block;
+          margin: 3px 0;
+        }
+      }
+
+      .top-info-container,
+      .navbar .container {
+        max-width: 1200px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+    </style>
   </head>
   <body class="tt-magic-cursor">
     <!-- Preloader Start -->
@@ -54,12 +131,42 @@
 
     <!-- Header Start -->
     <header class="main-header">
+      <div class="top-info-bar">
+        <div class="top-info-container">
+          <div class="top-info-left">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+              Call us: <a href="tel:17148239281">(714) 823-9281</a>
+            </span>
+            <span>
+              <i class="fas fa-envelope"></i>
+              Email:
+              <a href="mailto:info@taxexpertsofoc.com"
+                >info@taxexpertsofoc.com</a
+              >
+            </span>
+          </div>
+
+          <div class="top-info-right">
+            <a href="#" class="top-link">
+              <i class="fas fa-file-upload"></i> Upload Doc
+            </a>
+            <a
+              target="_blank"
+              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5G2KU8TMJT9W8"
+              class="top-btn"
+            >
+              MAKE A PAYMENT
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="header-sticky">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
             <!-- Logo Start -->
-            <a class="navbar-brand" href="./">
-              <img src="images/logo.svg" alt="Logo" />
+            <a class="navbar-brand" style="width: 250px" href="/">
+              <img src="/images/Tax-expert-logo-01.png" alt="Logo" />
             </a>
             <!-- Logo End -->
 
@@ -68,55 +175,64 @@
               <div class="nav-menu-wrapper">
                 <ul class="navbar-nav mr-auto" id="menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">about us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="services.html">services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="/">Home</a>
                   </li>
                   <li class="nav-item submenu">
-                    <a class="nav-link" href="#">pages</a>
+                    <a class="nav-link" href="#">Services</a>
                     <ul>
                       <li class="nav-item">
-                        <a class="nav-link" href="service-single.html"
-                          >service details</a
+                        <a class="nav-link" href="/tax-preparation.html"
+                          >Tax Preparation</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="blog-single.html"
-                          >blog details</a
+                        <a class="nav-link" href="/tax-planning.html"
+                          >Tax Planning</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="team.html">Our Team</a>
+                        <a class="nav-link" href="/accounting-bookkeeping.html"
+                          >Accounting Services</a
+                        >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">Pricing</a>
+                        <a class="nav-link" href="/business-incorporation.html"
+                          >Business Incorporation</a
+                        >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="faqs.html">FAQ</a>
+                        <a class="nav-link" href="/payroll-services.html"
+                          >Payroll Services</a
+                        >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="404.html">404</a>
+                        <a
+                          class="nav-link"
+                          href="/irs-tax-problem-resolution-service.html"
+                          >IRS Tax Problem & Resolution Service</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="/outsourced-cfo-controllership.html"
+                          >Outsourced CFO & Controllership</a
+                        >
                       </li>
                     </ul>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                  </li>
+
                   <li class="nav-item highlighted-menu">
-                    <a class="nav-link" href="#">Book Now</a>
+                    <a class="nav-link" href="/contact.html">BOOK NOW</a>
                   </li>
                 </ul>
               </div>
               <!-- Let’s Start Button Start -->
               <div class="header-btn d-inline-flex">
-                <a href="#" class="btn-default">book now</a>
+                <a href="/contact.html" class="btn-default">BOOK NOW</a>
               </div>
               <!-- Let’s Start Button End -->
             </div>
@@ -775,29 +891,20 @@
 
     <!-- Cta Box Section Start -->
     <div class="cta-box">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-8">
-            <!-- Section Title Start -->
-            <div class="section-title">
-              <h2 class="text-anime-style-3">
-                Looking for a premium accounting for your business?
-              </h2>
-            </div>
-            <!-- Section Title End -->
-          </div>
+      <!-- Section Title Start -->
+      <h3
+        class="text-anime-style-3 mb-2"
+        style="color: white; text-align: center; font-size: 24px; width: 100%"
+      >
+        Call us @ 714-823-9281 and book your 30-minute free Consultation
+        appointment today.
+      </h3>
 
-          <div class="col-lg-4">
-            <!-- Section Btn Start -->
-            <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
-              <a href="#" class="btn-default btn-highlighted btn-large"
-                >get started</a
-              >
-            </div>
-            <!-- Section Btn End -->
-          </div>
-        </div>
-      </div>
+      <p style="color: white; text-align: center; font-size: 18px">
+        Diligent, Efficient, and Responsive. Your Tax & Business Partner.
+      </p>
+
+      <!-- Section Title End -->
     </div>
     <!-- Cta Box Section End -->
 
@@ -1052,17 +1159,28 @@
                 <div class="col-lg-5">
                   <!-- Footer Logo Start -->
                   <div class="footer-logo">
-                    <img style="width: 300px !important; display: block; padding: 0;" src="/images/Tax-expert-logo-01.png" alt="" />
+                    <img
+                      style="
+                        width: 300px !important;
+                        display: block;
+                        padding: 0;
+                      "
+                      src="/images/Tax-expert-logo-01.png"
+                      alt=""
+                    />
                   </div>
-                  <p style="color: white; margin-left: 13px;">Experienced Tax Professionals You Can Trust</p>
+                  <p style="color: white; margin-left: 13px">
+                    Experienced Tax Professionals You Can Trust
+                  </p>
                   <!-- Footer Logo End -->
                 </div>
 
                 <div class="col-lg-7">
                   <!-- Footer Title Start -->
                   <div class="footer-title">
-                    <h3 style="color: white;">
-                      Professional Tax Services for Individuals & Small Businesses in OC
+                    <h3 style="color: white">
+                      Professional Tax Services for Individuals & Small
+                      Businesses in OC
                     </h3>
                   </div>
                   <!-- Footer Title End -->
@@ -1077,14 +1195,14 @@
                 <div class="col-lg-5">
                   <!-- Subscribe Newsletter Start -->
                   <!-- <div class="subscribe-newsletter"> -->
-                    <!-- Newsletter Title Start -->
-                    <!-- <div class="newsletter-title">
+                  <!-- Newsletter Title Start -->
+                  <!-- <div class="newsletter-title">
                       <h3>newsletter signup</h3>
                     </div> -->
-                    <!-- Newsletter Title End -->
+                  <!-- Newsletter Title End -->
 
-                    <!-- Newsletters Form Start -->
-                    <!-- <div class="newsletters-form">
+                  <!-- Newsletters Form Start -->
+                  <!-- <div class="newsletters-form">
                       <form id="newslettersForm" action="#" class="mail-box">
                         <input
                           type="email"
@@ -1097,17 +1215,17 @@
                         <a href="#" class="btn-default">subscribe now</a>
                       </div>
                     </div> -->
-                    <p class="col-lg-10" style="color: white;">
-                      At TaxExpertsofOC.com, our clients always come first. We
-                      pride ourselves on delivering exceptional service and
-                      personalized attention to each individual we serve. With
-                      our team's extensive experience and the valuable expertise
-                      of our CPA, and EA, we offer a comprehensive approach to
-                      tax planning and preparation. Our unwavering objective is
-                      to help our clients legally minimize their tax obligations
-                      while strictly adhering to IRS guidelines.
-                    </p>
-                    <!-- Newsletters Form End -->
+                  <p class="col-lg-10" style="color: white">
+                    At TaxExpertsofOC.com, our clients always come first. We
+                    pride ourselves on delivering exceptional service and
+                    personalized attention to each individual we serve. With our
+                    team's extensive experience and the valuable expertise of
+                    our CPA, and EA, we offer a comprehensive approach to tax
+                    planning and preparation. Our unwavering objective is to
+                    help our clients legally minimize their tax obligations
+                    while strictly adhering to IRS guidelines.
+                  </p>
+                  <!-- Newsletters Form End -->
                   <!-- </div> -->
                   <!-- Subscribe Newsletter End -->
                 </div>
@@ -1121,7 +1239,9 @@
                         <ul>
                           <li><a href="/home">Home</a></li>
                           <li><a href="/contact.html">Contact Us</a></li>
-                          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                          <li>
+                            <a href="/privacy-policy.html">Privacy Policy</a>
+                          </li>
                         </ul>
                       </div>
                       <!-- Footer Links End -->
@@ -1132,11 +1252,41 @@
                       <div class="footer-links">
                         <h2>Socials</h2>
                         <ul>
-                          <li><a href="https://www.instagram.com/taxexpertsofoc/" target="_blank">instagram</a></li>
-                          <li><a href="https://www.facebook.com/profile.php?id=100091145493047" target="_blank">facebook</a></li>
-                          <li><a href="https://twitter.com/taxexpertsofoc_" target="_blank">twitter</a></li>
-                          <li><a href="https://www.linkedin.com/company/tax-experts-of-oc/" target="_blank">linkedin</a></li>
-                          <li><a href="http://www.youtube.com/@TaxExpertsofOC" target="_blank">YouTube</a></li>
+                          <li>
+                            <a
+                              href="https://www.instagram.com/taxexpertsofoc/"
+                              target="_blank"
+                              >instagram</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.facebook.com/profile.php?id=100091145493047"
+                              target="_blank"
+                              >facebook</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://twitter.com/taxexpertsofoc_"
+                              target="_blank"
+                              >twitter</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.linkedin.com/company/tax-experts-of-oc/"
+                              target="_blank"
+                              >linkedin</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="http://www.youtube.com/@TaxExpertsofOC"
+                              target="_blank"
+                              >YouTube</a
+                            >
+                          </li>
                         </ul>
                       </div>
                       <!-- Footer Links End -->
@@ -1156,7 +1306,7 @@
                           </li>
                         </ul>
                         <iframe
-                        class="mt-4 col-md-12"
+                          class="mt-4 col-md-12"
                           loading="lazy"
                           src="https://maps.google.com/maps?q=3625%20W%20MacArthur%20Blvd%20%23310%2C%20Santa%20Ana%2C%20CA%2092704%2C%20United%20States&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near"
                           title="3625 W MacArthur Blvd #310, Santa Ana, CA 92704, United States"
@@ -1177,7 +1327,9 @@
                 <div class="col-lg-12">
                   <!-- Footer Copyright Content Start -->
                   <div class="footer-copyright-text">
-                    <p>copyright © 2026 Tax Experts of OC. all rights reserved.</p>
+                    <p>
+                      copyright © 2026 Tax Experts of OC. all rights reserved.
+                    </p>
                   </div>
                   <!-- Footer Copyright Content End -->
                 </div>
