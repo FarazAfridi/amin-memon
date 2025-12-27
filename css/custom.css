@@ -4069,3 +4069,10 @@ header.main-header{
 		font-size: 30px;
 	}
 }
+
+.faq-section {
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 20px;
+}
