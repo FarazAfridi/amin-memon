@@ -384,13 +384,13 @@
             el.data('menu', data);
         }
         if (data.parent.hasClass(prefix+'_collapsed')) {
-            data.arrow.html(settings.openedSymbol);
+            data.arrow(settings.openedSymbol);
             data.parent.removeClass(prefix+'_collapsed');
             data.parent.addClass(prefix+'_open');
             data.parent.addClass(prefix+'_animating');
             $this._visibilityToggle(data.ul, data.parent, true, el);
         } else {
-            data.arrow.html(settings.closedSymbol);
+            data.arrow(settings.closedSymbol);
             data.parent.addClass(prefix+'_collapsed');
             data.parent.removeClass(prefix+'_open');
             data.parent.addClass(prefix+'_animating');

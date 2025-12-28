@@ -39,7 +39,7 @@
 
 	$subject = $_POST['subject'].' - Contact from site';
 
-	$EmailTo = "info@yourdomain.com"; // Replace with your email.
+	$EmailTo = "farazafridi5159@gmail.com"; // Replace with your email.
 
 	// prepare email body text
 	$Body = "";
