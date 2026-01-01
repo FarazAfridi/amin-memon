@@ -38,16 +38,22 @@
         width: 100%;
         background: #0c1524; /* navy blue */
         color: #fff;
-        font-size: 14px;
+        font-size: 20px;
       }
 
       .top-info-container {
-        max-width: 1200px;
+        /* max-width: 1200px; */
         margin: auto;
         padding: 8px 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+
+      .top-info-left {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
       }
 
       .top-info-left span {
@@ -100,11 +106,14 @@
           display: block;
           margin: 3px 0;
         }
+        .top-info-bar {
+          font-size: 14px;
+        }
       }
 
       .top-info-container,
       .navbar .container {
-        max-width: 1200px !important;
+        max-width: 1300px !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
       }
@@ -115,7 +124,7 @@
     <div class="preloader">
       <div class="loading-container">
         <div class="loading"></div>
-        <div id="loading-icon"><img src="/images/loader.svg" alt="" /></div>
+        <div id="loading-icon"><img src="/images/favicon.png" alt="" /></div>
       </div>
     </div>
     <!-- Preloader End -->
@@ -144,19 +153,6 @@
                 >info@taxexpertsofoc.com</a
               >
             </span>
-          </div>
-
-          <div class="top-info-right">
-            <a href="#" class="top-link">
-              <i class="fas fa-file-upload"></i> Upload Doc
-            </a>
-            <a
-              target="_blank"
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5G2KU8TMJT9W8"
-              class="top-btn"
-            >
-              MAKE A PAYMENT
-            </a>
           </div>
         </div>
       </div>
@@ -285,7 +281,9 @@
                 class="hero-content-footer wow fadeInUp"
                 data-wow-delay="0.75s"
               >
-                <a href="/tax-resolution-form" class="btn-default">Let's Get Started</a>
+                <a href="/tax-resolution-form" class="btn-default"
+                  >Let's Get Started</a
+                >
               </div>
             </div>
             <!-- Hero Left Content End -->
@@ -313,9 +311,7 @@
             <!-- Section Title Start -->
             <div class="section-title">
               <h3 class="wow fadeInUp">about us</h3>
-              <h2 class="">
-                Accounting Expertise That Puts You First
-              </h2>
+              <h2 class="">Accounting Expertise That Puts You First</h2>
             </div>
             <!-- Section Title End -->
           </div>
@@ -327,18 +323,19 @@
               data-wow-delay="0.25s"
             >
               <p>
-                At Tax Experts of OC, we provide reliable tax and accounting
-                services for individuals and businesses across Orange County.
-                Our expertise includes tax preparation and planning, accounting,
-                bookkeeping, payroll, company formation, and tax resolution
-                delivered with clarity and confidence.
+                At Tax Experts of OC, we help individuals and businesses achieve
+                financial clarity and confidence through expert tax and
+                accounting services. Our firm specializes in personal and
+                business tax preparation and planning, tax resolutions,
+                accounting, bookkeeping, payroll, company formation, and
+                financial strategy, so you can focus on what matters most while
+                we manage the numbers.
               </p>
+
               <br />
               <p>
-                With years of experience serving individuals, corporations,
-                LLCs, partnerships, non-profits, and small to medium-sized
-                businesses, we create practical financial strategies that
-                support long-term growth and compliance
+                Partner with Tax Experts of OC—where experience meets
+                personalized service and results.
               </p>
             </div>
             <!-- Section Title Content End -->
@@ -382,9 +379,11 @@
               </div>
               <div class="about-company-content">
                 <p>
-                  We believe in building lasting relationships with our clients
-                  by putting their needs first and providing personalized,
-                  dependable support year after year.
+                  Recognized as one of the top accounting firms in Orange
+                  County, California, we bring years of proven experience
+                  serving individuals, families, corporations, partnerships,
+                  LLCs, sole proprietors, non-profit and tax-exempt
+                  organizations, and small to medium-sized businesses.
                 </p>
               </div>
             </div>
@@ -399,9 +398,11 @@
               </div>
               <div class="about-company-content">
                 <p>
-                  Every client is unique. We customize our tax, accounting,
-                  bookkeeping, and payroll services to fit your specific goals,
-                  structure, and financial situation.
+                  We provide a full suite of tax, accounting, bookkeeping, and
+                  payroll services, including individual and business tax
+                  returns, LLC and corporate filings, partnerships, estates and
+                  trusts, non-profit and tax-exempt returns, multi-state tax
+                  filings, prior-year tax returns and tax resolutions.
                 </p>
               </div>
             </div>
@@ -416,9 +417,11 @@
               </div>
               <div class="about-company-content">
                 <p>
-                  Using modern technology and proven systems, we streamline
-                  workflows to ensure accuracy, efficiency, and peace of mind
-                  whether we work with you monthly, quarterly, or annually.
+                  Our resolute team delivers accurate, dependable bookkeeping
+                  and accounting services tailored to your business needs.
+                  Whether you require monthly, quarterly, or annual support, we
+                  offer flexible solutions designed to keep your finances
+                  organized, compliant, and positioned for growth.
                 </p>
               </div>
             </div>
@@ -437,9 +440,7 @@
             <!-- Section Title Start -->
             <div class="section-title">
               <h3 class="wow fadeInUp">our services</h3>
-              <h2 class="">
-                Your business goals are our priority
-              </h2>
+              <h2 class="">Your business goals are our priority</h2>
             </div>
             <!-- Section Title End -->
           </div>
@@ -467,16 +468,16 @@
               <div class="service-image">
                 <figure class="image-anime">
                   <a href="/tax-preparation"
-                    ><img src="/images/services/optimized/tax-preparation.jpg" alt=""
+                    ><img
+                      src="/images/services/optimized/tax-preparation.jpg"
+                      alt=""
                   /></a>
                 </figure>
               </div>
               <div class="service-content">
                 <h3>Tax Preparation</h3>
                 <div class="service-readmore-btn">
-                  <a href="/tax-preparation" class="btn-default"
-                    >read more</a
-                  >
+                  <a href="/tax-preparation" class="btn-default">read more</a>
                 </div>
               </div>
             </div>
@@ -489,7 +490,9 @@
               <div class="service-image">
                 <figure class="image-anime">
                   <a href="/tax-planning"
-                    ><img src="/images/services/optimized/tax-planning.jpg" alt=""
+                    ><img
+                      src="/images/services/optimized/tax-planning.jpg"
+                      alt=""
                   /></a>
                 </figure>
               </div>
@@ -509,7 +512,9 @@
               <div class="service-image">
                 <figure class="image-anime">
                   <a href="/accounting-bookkeeping"
-                    ><img src="/images/services/optimized/book-keeping.jpg" alt=""
+                    ><img
+                      src="/images/services/optimized/book-keeping.jpg"
+                      alt=""
                   /></a>
                 </figure>
               </div>
@@ -586,9 +591,7 @@
               <div class="service-content">
                 <h3>Payroll Services</h3>
                 <div class="service-readmore-btn">
-                  <a href="/payroll-services" class="btn-default"
-                    >read more</a
-                  >
+                  <a href="/payroll-services" class="btn-default">read more</a>
                 </div>
               </div>
             </div>
@@ -600,16 +603,16 @@
               <div class="service-image">
                 <figure class="image-anime">
                   <a href="/outsourced-cfo-controllership"
-                    ><img src="/images/services/optimized/controllership.png" alt=""
+                    ><img
+                      src="/images/services/optimized/controllership.png"
+                      alt=""
                   /></a>
                 </figure>
               </div>
               <div class="service-content">
                 <h3>Outsourced CFO & Controllership</h3>
                 <div class="service-readmore-btn">
-                  <a
-                    href="/outsourced-cfo-controllership"
-                    class="btn-default"
+                  <a href="/outsourced-cfo-controllership" class="btn-default"
                     >read more</a
                   >
                 </div>
@@ -644,106 +647,6 @@
     </div>
     <!-- Our Services End -->
 
-    <!-- State Counter Section Start -->
-    <div class="state-counter">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <!-- Section Title Start -->
-            <div class="section-title">
-              <h3 class="wow fadeInUp">state of affairs</h3>
-              <h2 class="">
-                Keeping you informed on tax laws and financial trends
-              </h2>
-            </div>
-            <!-- Section Title End -->
-
-            <!-- Counter Contact Btn Start -->
-            <div
-              class="counter-contact-btn wow fadeInUp"
-              data-wow-delay="0.25s"
-            >
-              <a href="#" class="btn-default">contact us</a>
-            </div>
-            <!-- Counter Contact Btn End -->
-          </div>
-
-          <div class="col-lg-7">
-            <!-- State Image Counter Start -->
-            <div class="state-image-counter-1">
-              <!-- Counter Box Start -->
-              <div class="counter-box wow fadeInUp">
-                <div class="counter-content">
-                  <h3><span class="counter">980</span>+</h3>
-                  <p>Financial Audits Conducted Annually</p>
-                </div>
-              </div>
-              <!-- Counter Box End -->
-
-              <!-- Counter Box Image Start -->
-              <div
-                class="counter-box counter-image wow fadeInUp"
-                data-wow-delay="0.25s"
-              >
-                <figure class="image-anime">
-                  <img src="/images/counter-img-1.jpg" alt="" />
-                </figure>
-              </div>
-              <!-- Counter Box Image End -->
-
-              <!-- Counter Box Start -->
-              <div class="counter-box wow fadeInUp" data-wow-delay="0.5s">
-                <div class="counter-content">
-                  <h3><span class="counter">1984</span>+</h3>
-                  <p>Satisfied Clients and Counting</p>
-                </div>
-              </div>
-              <!-- Counter Box End -->
-            </div>
-            <!-- State Image Counter End -->
-
-            <!-- State Image Counter Start -->
-            <div class="state-image-counter-2">
-              <!-- Counter Box Image Start -->
-              <div
-                class="counter-box counter-image wow fadeInUp"
-                data-wow-delay="0.75s"
-              >
-                <figure class="image-anime">
-                  <img src="/images/counter-img-2.jpg" alt="" />
-                </figure>
-              </div>
-              <!-- Counter Box Image End -->
-
-              <!-- Counter Box Start -->
-              <div class="counter-box wow fadeInUp" data-wow-delay="1s">
-                <div class="counter-content">
-                  <h3><span class="counter">9870</span>+</h3>
-                  <p>
-                    Hours Saved for Our Clients through Streamlined Processes
-                  </p>
-                </div>
-              </div>
-              <!-- Counter Box End -->
-
-              <!-- Counter Box Image Start -->
-              <div
-                class="counter-box counter-image wow fadeInUp"
-                data-wow-delay="1.25s"
-              >
-                <figure class="image-anime">
-                  <img src="/images/counter-img-3.jpg" alt="" />
-                </figure>
-              </div>
-              <!-- Counter Box Image End -->
-            </div>
-            <!-- State Image Counter End -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- State Counter Section End -->
-
     <!-- Our Employee Section Start -->
     <div class="our-employee">
       <div class="container">
@@ -768,28 +671,30 @@
 
               <!-- Employee Body Start -->
               <div class="employee-body wow fadeInUp" data-wow-delay="0.25s">
-                <p class="mb-2">
-                  Do not worry about distance! All issues can be resolved
-                  conveniently and remotely via phone or email.
-                </p>
-
-                <p>
-                  Regardless of whether your business is situated in Orange
-                  County, Los Angeles County, Riverside County, San Bernardino
-                  County, San Diego County, Inland Empire, or out of state
-                  anywhere around the country.
-                </p>
 
                 <p class="mb-2">
-                  Tax Experts of OC with their unique team is there to help with
-                  your needs.
+                  No matter where you are located, help is always within reach. 
+                </p>
+                <p class="mb-2">
+                  Distance is never a barrier with Tax Experts of OC. We provide
+                  reliable, secure, and convenient tax and accounting services
+                  remotely via phone and email. Whether your business is in
+                  Orange County, Los Angeles County, Riverside County, San
+                  Bernardino County, San Diego County, the Inland Empire, or
+                  anywhere in the United States, our experienced team is ready
+                  to assist you.
                 </p>
 
-                <p>
-                  As a business owner, you need an top accounting firm that can
-                  take you beyond the numbers so you can spend precious time on
-                  what really matters your business.
+                <p class="mb-2">
+                  Trusted Accounting Firm for Business Owners At Tax Experts of
+                  OC, our expert accounting and tax professionals go beyond
+                  basic number-crunching. We deliver strategic tax planning,
+                  bookkeeping, and accounting solutions tailored to your
+                  business goals. As a business owner, you need a top accounting
+                  firm you can rely on—so you can focus on growing your business
+                  while we manage your financial needs with accuracy and care.
                 </p>
+
               </div>
             </div>
             <!-- Employee Content End -->
@@ -806,364 +711,375 @@
       <!-- FAQ Accordion Start -->
       <div class="faq-accordion">
         <!-- Make sure your wrapper has this ID -->
-<div class="accordion" id="faq_accordion">
-  <!-- FAQ Item 1 -->
-  <div class="accordion-item wow fadeInUp">
-    <h2 class="accordion-header" id="heading1">
-      <button
-        class="accordion-button"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse1"
-        aria-expanded="true"
-        aria-controls="collapse1"
-      >
-        What are the advantages of having an accountant?
-      </button>
-    </h2>
+        <div class="accordion" id="faq_accordion">
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item wow fadeInUp">
+            <h2 class="accordion-header" id="heading1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+                aria-expanded="true"
+                aria-controls="collapse1"
+              >
+                What are the advantages of having an accountant?
+              </button>
+            </h2>
 
-    <div
-      id="collapse1"
-      class="accordion-collapse collapse show"
-      aria-labelledby="heading1"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          The best accounting firms gives you a specialist (accountant) that’s
-          always current on the latest tax laws and codes. Having an top accountant
-          means You have peace of mind that your books are accurate and up to date,
-          plus access to reports that help make better decisions.
-        </p>
-      </div>
-    </div>
-  </div>
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse show"
+              aria-labelledby="heading1"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  The best accounting firms gives you a specialist (accountant)
+                  that’s always current on the latest tax laws and codes. Having
+                  an top accountant means You have peace of mind that your books
+                  are accurate and up to date, plus access to reports that help
+                  make better decisions.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- FAQ Item 2 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s">
-    <h2 class="accordion-header" id="heading2">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse2"
-        aria-expanded="false"
-        aria-controls="collapse2"
-      >
-        How detailed do my business records have to be?
-      </button>
-    </h2>
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s">
+            <h2 class="accordion-header" id="heading2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+                aria-expanded="false"
+                aria-controls="collapse2"
+              >
+                How detailed do my business records have to be?
+              </button>
+            </h2>
 
-    <div
-      id="collapse2"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading2"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          Your business should keep documentation of every transaction-from daily
-          sales to payroll to all company purchases. These records are vital for
-          filing your taxes and having a solid understanding of your overall financial health.
-        </p>
-      </div>
-    </div>
-  </div>
+            <div
+              id="collapse2"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading2"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Your business should keep documentation of every
+                  transaction-from daily sales to payroll to all company
+                  purchases. These records are vital for filing your taxes and
+                  having a solid understanding of your overall financial health.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- FAQ Item 3 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
-    <h2 class="accordion-header" id="heading3">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse3"
-        aria-expanded="false"
-        aria-controls="collapse3"
-      >
-        What are some signs that I need an accountant?
-      </button>
-    </h2>
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+            <h2 class="accordion-header" id="heading3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3"
+                aria-expanded="false"
+                aria-controls="collapse3"
+              >
+                What are some signs that I need an accountant?
+              </button>
+            </h2>
 
-    <div
-      id="collapse3"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading3"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          Think about the time your employees spend like bookkeeping, taxes, and payroll.
-          Are those tasks slowing new revenue? Also, do you need help with tax strategy?
-          If you answered yes to either question, an account would help.
-        </p>
-      </div>
-    </div>
-  </div>
+            <div
+              id="collapse3"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading3"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Think about the time your employees spend like bookkeeping,
+                  taxes, and payroll. Are those tasks slowing new revenue? Also,
+                  do you need help with tax strategy? If you answered yes to
+                  either question, an account would help.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Tax Experts of OC FAQ 1 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
-    <h2 class="accordion-header" id="heading4">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse4"
-        aria-expanded="false"
-        aria-controls="collapse4"
-      >
-        What does Tax Experts of OC do, and how can you help me?
-      </button>
-    </h2>
-    <div
-      id="collapse4"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading4"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          Tax Experts of OC helps individuals and businesses resolve federal and state tax problems.
-          We work directly with the IRS and state agencies to stop collections, reduce tax debt when
-          possible, and bring you back into compliance—handling the process from start to finish.
-        </p>
-      </div>
-    </div>
-  </div>
+          <!-- Tax Experts of OC FAQ 1 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+            <h2 class="accordion-header" id="heading4">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse4"
+                aria-expanded="false"
+                aria-controls="collapse4"
+              >
+                What does Tax Experts of OC do, and how can you help me?
+              </button>
+            </h2>
+            <div
+              id="collapse4"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading4"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Tax Experts of OC helps individuals and businesses resolve
+                  federal and state tax problems. We work directly with the IRS
+                  and state agencies to stop collections, reduce tax debt when
+                  possible, and bring you back into compliance—handling the
+                  process from start to finish.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Tax Experts of OC FAQ 2 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-    <h2 class="accordion-header" id="heading5">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse5"
-        aria-expanded="false"
-        aria-controls="collapse5"
-      >
-        Where is Tax Experts of OC located?
-      </button>
-    </h2>
-    <div
-      id="collapse5"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading5"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          We are based in Orange County, California, and proudly serve clients nationwide.
-          Location is never a barrier to getting professional tax help.
-        </p>
-      </div>
-    </div>
-  </div>
+          <!-- Tax Experts of OC FAQ 2 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+            <h2 class="accordion-header" id="heading5">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse5"
+                aria-expanded="false"
+                aria-controls="collapse5"
+              >
+                Where is Tax Experts of OC located?
+              </button>
+            </h2>
+            <div
+              id="collapse5"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading5"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  We are based in Orange County, California, and proudly serve
+                  clients nationwide. Location is never a barrier to getting
+                  professional tax help.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Tax Experts of OC FAQ 3 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
-    <h2 class="accordion-header" id="heading6">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse6"
-        aria-expanded="false"
-        aria-controls="collapse6"
-      >
-        Do you offer virtual consultations?
-      </button>
-    </h2>
-    <div
-      id="collapse6"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading6"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          Yes. We offer phone and virtual consultations so you can get expert tax guidance
-          quickly and conveniently without visiting an office.
-        </p>
-      </div>
-    </div>
-  </div>
+          <!-- Tax Experts of OC FAQ 3 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+            <h2 class="accordion-header" id="heading6">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse6"
+                aria-expanded="false"
+                aria-controls="collapse6"
+              >
+                Do you offer virtual consultations?
+              </button>
+            </h2>
+            <div
+              id="collapse6"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading6"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Yes. We offer phone and virtual consultations so you can get
+                  expert tax guidance quickly and conveniently without visiting
+                  an office.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Tax Experts of OC FAQ 4 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-    <h2 class="accordion-header" id="heading7">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse7"
-        aria-expanded="false"
-        aria-controls="collapse7"
-      >
-        Do you help clients in all states?
-      </button>
-    </h2>
-    <div
-      id="collapse7"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading7"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          Yes. We assist clients in all 50 states with IRS and state tax matters,
-          regardless of where you live.
-        </p>
-      </div>
-    </div>
-  </div>
+          <!-- Tax Experts of OC FAQ 4 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+            <h2 class="accordion-header" id="heading7">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse7"
+                aria-expanded="false"
+                aria-controls="collapse7"
+              >
+                Do you help clients in all states?
+              </button>
+            </h2>
+            <div
+              id="collapse7"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading7"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Yes. We assist clients in all 50 states with IRS and state tax
+                  matters, regardless of where you live.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Tax Experts of OC FAQ 5 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
-    <h2 class="accordion-header" id="heading8">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse8"
-        aria-expanded="false"
-        aria-controls="collapse8"
-      >
-        How much do tax resolution services cost?
-      </button>
-    </h2>
-    <div
-      id="collapse8"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading8"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          Pricing depends on your specific tax situation and case complexity.
-          After a free consultation, we provide clear, upfront pricing so there are no surprises.
-        </p>
-      </div>
-    </div>
-  </div>
+          <!-- Tax Experts of OC FAQ 5 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+            <h2 class="accordion-header" id="heading8">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse8"
+                aria-expanded="false"
+                aria-controls="collapse8"
+              >
+                How much do tax resolution services cost?
+              </button>
+            </h2>
+            <div
+              id="collapse8"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading8"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Pricing depends on your specific tax situation and case
+                  complexity. After a free consultation, we provide clear,
+                  upfront pricing so there are no surprises.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Tax Experts of OC FAQ 6 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
-    <h2 class="accordion-header" id="heading9">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse9"
-        aria-expanded="false"
-        aria-controls="collapse9"
-      >
-        I can’t afford to pay upfront. Can you still help me?
-      </button>
-    </h2>
-    <div
-      id="collapse9"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading9"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          Yes. We offer flexible payment options for qualified clients, allowing you to begin
-          resolving your tax issues immediately while spreading the cost over time.
-        </p>
-      </div>
-    </div>
-  </div>
+          <!-- Tax Experts of OC FAQ 6 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+            <h2 class="accordion-header" id="heading9">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse9"
+                aria-expanded="false"
+                aria-controls="collapse9"
+              >
+                I can’t afford to pay upfront. Can you still help me?
+              </button>
+            </h2>
+            <div
+              id="collapse9"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading9"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Yes. We offer flexible payment options for qualified clients,
+                  allowing you to begin resolving your tax issues immediately
+                  while spreading the cost over time.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Tax Experts of OC FAQ 7 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
-    <h2 class="accordion-header" id="heading10">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse10"
-        aria-expanded="false"
-        aria-controls="collapse10"
-      >
-        I received a notice or letter from the IRS. Can you help me?
-      </button>
-    </h2>
-    <div
-      id="collapse10"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading10"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          Yes. Once authorized, we communicate directly with the IRS or state agency on your behalf
-          and take immediate steps to protect you and resolve the issue.
-        </p>
-      </div>
-    </div>
-  </div>
+          <!-- Tax Experts of OC FAQ 7 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
+            <h2 class="accordion-header" id="heading10">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse10"
+                aria-expanded="false"
+                aria-controls="collapse10"
+              >
+                I received a notice or letter from the IRS. Can you help me?
+              </button>
+            </h2>
+            <div
+              id="collapse10"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading10"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Yes. Once authorized, we communicate directly with the IRS or
+                  state agency on your behalf and take immediate steps to
+                  protect you and resolve the issue.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Tax Experts of OC FAQ 8 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
-    <h2 class="accordion-header" id="heading11">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse11"
-        aria-expanded="false"
-        aria-controls="collapse11"
-      >
-        How long does it take to resolve a tax problem?
-      </button>
-    </h2>
-    <div
-      id="collapse11"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading11"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          Timelines vary by case. Some matters are resolved in a few weeks, while more complex issues
-          may take several months. We provide a clear timeline after reviewing your case.
-        </p>
-      </div>
-    </div>
-  </div>
+          <!-- Tax Experts of OC FAQ 8 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+            <h2 class="accordion-header" id="heading11">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse11"
+                aria-expanded="false"
+                aria-controls="collapse11"
+              >
+                How long does it take to resolve a tax problem?
+              </button>
+            </h2>
+            <div
+              id="collapse11"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading11"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Timelines vary by case. Some matters are resolved in a few
+                  weeks, while more complex issues may take several months. We
+                  provide a clear timeline after reviewing your case.
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Tax Experts of OC FAQ 9 -->
-  <div class="accordion-item wow fadeInUp" data-wow-delay="0.9s">
-    <h2 class="accordion-header" id="heading12">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse12"
-        aria-expanded="false"
-        aria-controls="collapse12"
-      >
-        How do I schedule a free consultation?
-      </button>
-    </h2>
-    <div
-      id="collapse12"
-      class="accordion-collapse collapse"
-      aria-labelledby="heading12"
-      data-bs-parent="#faq_accordion"
-    >
-      <div class="accordion-body">
-        <p>
-          You can schedule a free consultation by calling us or filling out our online contact form.
-          A tax professional will review your situation and explain your options at no cost.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
+          <!-- Tax Experts of OC FAQ 9 -->
+          <div class="accordion-item wow fadeInUp" data-wow-delay="0.9s">
+            <h2 class="accordion-header" id="heading12">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse12"
+                aria-expanded="false"
+                aria-controls="collapse12"
+              >
+                How do I schedule a free consultation?
+              </button>
+            </h2>
+            <div
+              id="collapse12"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading12"
+              data-bs-parent="#faq_accordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  You can schedule a free consultation by calling us or filling
+                  out our online contact form. A tax professional will review
+                  your situation and explain your options at no cost.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- FAQ Accordion End -->
     </div>

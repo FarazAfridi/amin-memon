@@ -38,16 +38,22 @@
         width: 100%;
         background: #0c1524; /* navy blue */
         color: #fff;
-        font-size: 14px;
+        font-size: 20px;
       }
 
       .top-info-container {
-        max-width: 1200px;
+        /* max-width: 1200px; */
         margin: auto;
         padding: 8px 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+
+      .top-info-left {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
       }
 
       .top-info-left span {
@@ -100,11 +106,14 @@
           display: block;
           margin: 3px 0;
         }
+         .top-info-bar {
+          font-size: 14px;
+         }
       }
 
       .top-info-container,
       .navbar .container {
-        max-width: 1200px !important;
+        max-width: 1300px !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
       }
@@ -115,7 +124,7 @@
     <div class="preloader">
       <div class="loading-container">
         <div class="loading"></div>
-        <div id="loading-icon"><img src="/images/loader.svg" alt="" /></div>
+        <div id="loading-icon"><img src="/images/favicon.png" alt="" /></div>
       </div>
     </div>
     <!-- Preloader End -->
@@ -146,18 +155,6 @@
             </span>
           </div>
 
-          <div class="top-info-right">
-            <a href="#" class="top-link">
-              <i class="fas fa-file-upload"></i> Upload Doc
-            </a>
-            <a
-              target="_blank"
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5G2KU8TMJT9W8"
-              class="top-btn"
-            >
-              MAKE A PAYMENT
-            </a>
-          </div>
         </div>
       </div>
       <div class="header-sticky">

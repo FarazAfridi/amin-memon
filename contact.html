@@ -38,16 +38,22 @@
         width: 100%;
         background: #0c1524; /* navy blue */
         color: #fff;
-        font-size: 14px;
+        font-size: 20px;
       }
 
       .top-info-container {
-        max-width: 1200px;
+        /* max-width: 1200px; */
         margin: auto;
         padding: 8px 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+
+      .top-info-left {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
       }
 
       .top-info-left span {
@@ -100,11 +106,14 @@
           display: block;
           margin: 3px 0;
         }
+         .top-info-bar {
+          font-size: 14px;
+         }
       }
 
       .top-info-container,
       .navbar .container {
-        max-width: 1200px !important;
+        max-width: 1300px !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
       }
@@ -115,7 +124,7 @@
     <div class="preloader">
       <div class="loading-container">
         <div class="loading"></div>
-        <div id="loading-icon"><img src="/images/loader.svg" alt="" /></div>
+        <div id="loading-icon"><img src="/images/favicon.png" alt="" /></div>
       </div>
     </div>
     <!-- Preloader End -->
@@ -146,18 +155,6 @@
             </span>
           </div>
 
-          <div class="top-info-right">
-            <a href="#" class="top-link">
-              <i class="fas fa-file-upload"></i> Upload Doc
-            </a>
-            <a
-              target="_blank"
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5G2KU8TMJT9W8"
-              class="top-btn"
-            >
-              MAKE A PAYMENT
-            </a>
-          </div>
         </div>
       </div>
       <div class="header-sticky">
@@ -392,81 +389,38 @@
           <div class="col-lg-12">
             <!-- Contact Form Start -->
             <div class="contact-form wow fadeInUp" data-wow-delay="0.25s">
-              <form
-                id="contactForm"
-                action="#"
-                method="POST"
-                data-toggle="validator"
-              >
-                <div class="row">
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="text"
-                      name="fname"
-                      class="form-control"
-                      id="fname"
-                      placeholder="first name"
-                      required=""
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
+             <form
+  id="contactForm"
+  action="form-process.php"
+  method="POST"
+>
+  <div class="row">
+    <div class="form-group col-md-6 mb-4">
+      <input type="text" name="fname" class="form-control" id="fname" placeholder="first name" required />
+    </div>
 
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="text"
-                      name="lname"
-                      class="form-control"
-                      id="lname"
-                      placeholder="last name"
-                      required=""
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
+    <div class="form-group col-md-6 mb-4">
+      <input type="text" name="lname" class="form-control" id="lname" placeholder="last name" required />
+    </div>
 
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="email"
-                      name="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="email"
-                      required=""
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
+    <div class="form-group col-md-6 mb-4">
+      <input type="email" name="email" class="form-control" id="email" placeholder="email" required />
+    </div>
 
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="text"
-                      name="phone"
-                      class="form-control"
-                      id="phone"
-                      placeholder="Phone"
-                      required=""
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
+    <div class="form-group col-md-6 mb-4">
+      <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone" required />
+    </div>
 
-                  <div class="form-group col-md-12 mb-4">
-                    <textarea
-                      name="msg"
-                      class="form-control"
-                      id="msg"
-                      rows="7"
-                      placeholder="write a message"
-                      required=""
-                    ></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
+    <div class="form-group col-md-12 mb-4">
+      <textarea name="message" class="form-control" id="message" rows="7" placeholder="write a message" required></textarea>
+    </div>
 
-                  <div class="col-md-12">
-                    <button type="submit" class="btn-default">
-                      submit now
-                    </button>
-                    <div id="msgSubmit" class="h3 hidden"></div>
-                  </div>
-                </div>
-              </form>
+    <div class="col-md-12">
+      <button type="submit" class="btn-default">submit now</button>
+      <div id="msgSubmit" class="h3 hidden"></div>
+    </div>
+  </div>
+</form>
             </div>
             <!-- Contact Form End -->
           </div>
@@ -667,6 +621,39 @@
       </div>
     </footer>
     <!-- Footer End -->
+    
+ <script>
+  const form = document.getElementById("contactForm");
+  const msgSubmit = document.getElementById("msgSubmit");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    msgSubmit.classList.remove("hidden");
+    msgSubmit.textContent = "Sending...";
+
+    try {
+      const formData = new FormData(form);
+
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+      });
+
+      const text = (await res.text()).trim();
+
+      if (text === "success") {
+        msgSubmit.textContent = "Message sent successfully!";
+        form.reset();
+      } else {
+        // If your PHP returns validation errors, show them
+        msgSubmit.textContent = text || "Something went wrong :(";
+      }
+    } catch (err) {
+      msgSubmit.textContent = "Network error. Please try again.";
+    }
+  });
+</script>
 
     <!-- Jquery Library File -->
     <script src="/js/jquery-3.7.1.min.js"></script>

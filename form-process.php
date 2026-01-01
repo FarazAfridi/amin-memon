@@ -1,4 +1,5 @@
 <?php
+header("Content-Type: text/plain; charset=UTF-8");
 
 	$errorMSG = "";
 
@@ -37,9 +38,13 @@
 		$message = $_POST["message"];
 	}
 
-	$subject = $_POST['subject'].' - Contact from site';
+	$subject = "Contact from website";
 
-	$EmailTo = "farazafridi5159@gmail.com"; // Replace with your email.
+    $headers  = "From: Website Contact <no-reply@taxexpertsofoc.com>\r\n";
+    $headers .= "Reply-To: {$email}\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+	$EmailTo = "info@taxexpertsofoc.com"; // Replace with your email.
 
 	// prepare email body text
 	$Body = "";
@@ -57,7 +62,7 @@
 	$Body .= "\n";
 
 	// send email
-	$success = @mail($EmailTo, $subject, $Body, "From:".$email);
+	$success = mail($EmailTo, $subject, $Body, $headers);
 
 	// redirect to success page
 	if ($success && $errorMSG == ""){
